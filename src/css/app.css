@@ -1,0 +1,763 @@
+@charset "UTF-8";
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, audio, video {
+	margin: 0;
+	padding: 0;
+}
+
+body, input, textarea, select, table, button, code {
+	font-family: '나눔고딕',NanumGothic,-apple-system,BlinkMacSystemFont,Apple SD Gothic Neo,'맑은 고딕',Malgun Gothic,'돋움',dotum,sans-serif;
+	font-size: 16px;
+	line-height: 1.25;
+}
+
+body {
+	position: relative;
+	min-width: 1390px;
+	max-width: 1920px;
+	margin: 0 auto;
+	background-color: #f6f6f6;
+	color: #000;
+	-webkit-text-size-adjust: none;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+img, fieldset {
+	border: 0;
+}
+
+img, svg {
+	vertical-align: top;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+i, em, address, cite, dfn {
+	font-style: normal;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+}
+
+table {
+	border-collapse: collapse;
+}
+
+caption {
+	overflow: hidden;
+	position: static;
+	width: 0;
+	height: 0;
+	margin: -1px;
+	padding: 0 !important;
+	clip: rect(0 0 0 0);
+	font-size: 1px;
+	line-height: 0;
+	color: transparent;
+}
+
+input, select, button, textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+button {
+	border: none;
+	background: none;
+}
+
+hr {
+	display: none !important;
+}
+
+mark {
+	background: none;
+	font-weight: bold;
+	color: inherit;
+}
+
+.blind {
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	clip: rect(0 0 0 0);
+}
+
+section.home h1, section.home .icon_scroll_down, section.portfolio .swiper-button-prev, section.portfolio .swiper-button-prev.swiper-button-disabled, section.portfolio .swiper-button-next, section.portfolio .swiper-button-next.swiper-button-disabled, section.news .list_event .list_arrow, section.contact .label_uploader, section.contact .label_uploader2::before, section.contact button[type="submit"]::before, .modal_portfolio .swiper-button-prev, .modal_portfolio .swiper-button-prev.swiper-button-disabled, .modal_portfolio .swiper-button-next, .modal_portfolio .swiper-button-next.swiper-button-disabled, .modal_close {
+	background-image: url(../img/sp_appstory.png);
+	background-size: 352px 308px;
+}
+
+section {
+	position: relative;
+	height: 1080px;
+	text-align: center;
+	color: #fff;
+}
+
+.snb {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 1280px;
+	width: 110px;
+	height: 320px;
+	margin: auto;
+	color: #fff;
+	z-index: 10;
+}
+
+.snb .snb_menu {
+	display: block;
+	width: 110px;
+	margin: 20px 20px 20px 0;
+	line-height: 30px;
+}
+
+.snb .snb_menu.active {
+	font-weight: bold;
+	color: #fabe00;
+}
+
+div.inflow {
+	width: 200px;
+	height: 1000px;
+	border: 1px solid blue;
+	float: right;
+	position: relative;
+	margin-right: 100px;
+}
+
+div.positioner {
+	position: absolute;
+	right: 0;
+}
+
+/*may not be needed: see below*/
+div.fixed {
+	width: 80px;
+	border: 1px solid red;
+	height: 100px;
+	position: fixed;
+	top: 60px;
+	margin-left: 15px;
+	font-size: 60px;
+	color: #000;
+}
+
+h2 {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	width: 215px;
+	height: 215px;
+	margin-left: -614px;
+	background: #ea5514;
+	font-size: 40px;
+}
+
+h2 span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 125px;
+	margin: auto;
+}
+
+h2 em {
+	display: block;
+	font-size: 60px;
+}
+
+h3 {
+	font-size: 40px;
+}
+
+footer {
+	text-align: center;
+	padding: 15px 0;
+	line-height: 30px;
+	color: #666;
+}
+
+section.home {
+	overflow: hidden;
+}
+
+section.home h1 {
+	display: inline-block;
+	background-position: 0px 0px;
+	width: 270px;
+	height: 160px;
+	color: transparent;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+}
+
+section.home .txt {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	display: inline-block;
+	margin: 0 auto;
+	font-size: 45px;
+	font-weight: bold;
+}
+
+section.home .txt.txt1 {
+	animation: fadeInOut 24s -1.5s both infinite;
+}
+
+section.home .txt.txt2 {
+	animation: fadeInOut 24s 6.5s both infinite;
+}
+
+section.home .txt.txt3 {
+	animation: fadeInOut 24s 14.5s both infinite;
+}
+
+section.home .scroll_down {
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	right: 0;
+	width: 140px;
+	margin: 0 auto;
+}
+
+section.home .icon_scroll_down {
+	display: inline-block;
+	background-position: -332px 0px;
+	width: 20px;
+	height: 70px;
+	color: transparent;
+	display: block;
+	margin: 0 auto 10px;
+}
+
+@keyframes fadeInOut {
+	0% {
+		opacity: 0;
+	}
+	6.25% {
+		opacity: 1;
+	}
+	27% {
+		opacity: 1;
+	}
+	33.3% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+section.about {
+	background: #b5b5b6;
+}
+
+section.about h2 {
+	top: 113px;
+}
+
+section.about h3 {
+	padding: 247px 210px 32px 0;
+}
+
+section.about .list_feature {
+	margin-top: 50px;
+}
+
+section.about .list_feature li {
+	display: inline-block;
+	width: 270px;
+	vertical-align: top;
+	padding: 0 60px;
+}
+
+section.about .list_feature li .tit {
+	margin-top: 29px;
+	height: 60px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+section.about .list_feature li .subtit {
+	height: 30px;
+	margin-top: -2px;
+	color: #00a0e9;
+}
+
+section.portfolio {
+	overflow: hidden;
+	background: #727171 url("../img/bg_section3.jpg") center center no-repeat;
+	background-size: auto 450px;
+}
+
+section.portfolio h2 {
+	position: relative;
+	top: auto;
+	left: auto;
+	margin: 80px auto;
+	background: #7cbd27;
+}
+
+section.portfolio .flick_item {
+	width: 760px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+section.portfolio .flick_item::after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+section.portfolio .flick_item:hover {
+	cursor: pointer;
+}
+
+section.portfolio .flick_item:hover img {
+	transform: scale(1.1);
+}
+
+section.portfolio .thumb_area {
+	float: left;
+	position: relative;
+	width: 435px;
+	height: 100%;
+}
+
+section.portfolio .thumb_area img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+section.portfolio .thumb_area img + img {
+	position: absolute;
+	top: 30px;
+	left: 190px;
+}
+
+section.portfolio .info_area {
+	float: right;
+	width: 285px;
+	text-align: left;
+}
+
+section.portfolio .info_area h3 {
+	margin: 57px 0 30px;
+	font-weight: bold;
+	font-size: 45px;
+	white-space: nowrap;
+}
+
+section.portfolio .info_area .txt {
+	line-height: 30px;
+}
+
+section.portfolio .info_area .txt + .txt {
+	margin-top: 55px;
+}
+
+section.portfolio .swiper-container {
+	overflow: visible;
+	position: relative;
+	width: 1130px;
+	height: 540px;
+	margin: 30px auto 0;
+}
+
+section.portfolio .swiper-button-prev {
+	display: inline-block;
+	background-position: -274px -104px;
+	width: 25px;
+	height: 100px;
+	color: transparent;
+	position: absolute;
+	left: 0;
+	top: 50%;
+}
+
+section.portfolio .swiper-button-prev.swiper-button-disabled {
+	display: inline-block;
+	background-position: -303px 0px;
+	width: 25px;
+	height: 100px;
+	color: transparent;
+}
+
+section.portfolio .swiper-button-next {
+	display: inline-block;
+	background-position: -303px -104px;
+	width: 25px;
+	height: 100px;
+	color: transparent;
+	position: absolute;
+	right: 0;
+	top: 50%;
+}
+
+section.portfolio .swiper-button-next.swiper-button-disabled {
+	display: inline-block;
+	background-position: -274px 0px;
+	width: 25px;
+	height: 100px;
+	color: transparent;
+}
+
+section.news {
+	background: #b5b5b6;
+}
+
+section.news h2 {
+	top: 43px;
+	background: #9157a0;
+}
+
+section.news h3 {
+	padding-top: 173px;
+	height: 85px;
+}
+
+section.news h4 {
+	font-size: 50px;
+	line-height: 120px;
+}
+
+section.news .list_event .list_item {
+	display: inline-block;
+	width: 330px;
+	vertical-align: top;
+	text-align: left;
+}
+
+section.news .list_event .list_item .txt {
+	line-height: 2;
+}
+
+section.news .list_event .list_item:first-child img {
+	margin: 70px 0 25px;
+}
+
+section.news .list_event .list_item:last-child img {
+	margin-left: 30px;
+}
+
+section.news .list_event .list_arrow {
+	display: inline-block;
+	background-position: 0px -164px;
+	width: 190px;
+	height: 100px;
+	color: transparent;
+	margin: 95px 25px 0;
+	vertical-align: top;
+}
+
+section.contact {
+	background: url("../img/bg_section5.jpg") center center no-repeat;
+	background-size: cover;
+}
+
+section.contact h2 {
+	top: 85px;
+	background: #fabe00;
+}
+
+section.contact h3 {
+	padding-top: 147px;
+	height: 93px;
+}
+
+section.contact h4 {
+	margin-bottom: 50px;
+	font-size: 60px;
+	line-height: 60px;
+}
+
+section.contact .list_cell {
+	display: inline-block;
+	width: 400px;
+	padding: 0 10px;
+	vertical-align: top;
+}
+
+section.contact .list_row {
+	position: relative;
+	width: 820px;
+	height: 150px;
+	margin: 0 auto 30px;
+	padding: 20px 60px 50px 20px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #fff;
+}
+
+section.contact input {
+	display: block;
+	width: 100%;
+	padding: 0 20px;
+	height: 50px;
+	border: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 15px;
+}
+
+section.contact textarea {
+	display: block;
+	width: 100%;
+	height: 100%;
+	resize: none;
+	border: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+section.contact input[type="file"] {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+
+section.contact .label_uploader {
+	display: inline-block;
+	background-position: 0px -268px;
+	width: 40px;
+	height: 40px;
+	color: transparent;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+
+section.contact .label_uploader2 {
+	position: absolute;
+	display: inline-block;
+	bottom: 18px;
+	left: 20px;
+	background: #fff;
+	vertical-align: top;
+	color: #747574;
+	cursor: pointer;
+}
+
+section.contact .label_uploader2::before {
+	display: inline-block;
+	background-position: -332px -270px;
+	width: 20px;
+	height: 20px;
+	color: transparent;
+	vertical-align: top;
+	margin-right: 3px;
+	content: '';
+}
+
+section.contact button[type="submit"] {
+	position: relative;
+	width: 320px;
+	height: 50px;
+	background: #fabe00;
+	border: none;
+	border-radius: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+
+section.contact button[type="submit"]::before {
+	display: inline-block;
+	background-position: -44px -268px;
+	width: 40px;
+	height: 30px;
+	color: transparent;
+	position: absolute;
+	top: 0;
+	left: 30px;
+	bottom: 0;
+	margin: auto 0;
+	content: '';
+}
+
+section.company {
+	background: #b5b5b6;
+}
+
+section.company .tit_wrap {
+	overflow: hidden;
+	width: 950px;
+	margin: 0 auto;
+	padding-top: 110px;
+	text-align: left;
+}
+
+section.company h2 {
+	background: #00a0e9;
+	float: left;
+	position: relative;
+	top: auto;
+	left: auto;
+	margin: 6px 40px 0 0;
+	padding: 0;
+	text-align: center;
+}
+
+section.company h3 {
+	height: 75px;
+}
+
+section.company .txt {
+	padding-left: 255px;
+	margin-bottom: 65px;
+	line-height: 1.5;
+}
+
+section.company .list_row {
+	display: inline-block;
+	padding: 0 16px;
+	vertical-align: top;
+	text-align: left;
+	line-height: 1.5;
+}
+
+section.company .list_row strong {
+	display: block;
+}
+
+section.company .list_row .map_box {
+	width: 430px;
+	height: 430px;
+	padding: 10px;
+	margin-top: 8px;
+	border: 1px solid #fff;
+}
+
+section.company .list_row .map {
+	width: 100%;
+	height: 100%;
+}
+
+.disable_scroll {
+	overflow: hidden;
+}
+
+.modal_portfolio {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.3);
+	z-index: 20;
+	overflow-x: scroll;
+	overflow-y: scroll;
+	color: #fff;
+}
+
+.modal_portfolio .swiper-container {
+	margin: 0 80px;
+	text-align: center;
+}
+
+.modal_portfolio .swiper-button-prev {
+	display: inline-block;
+	background-position: -332px -172px;
+	width: 15px;
+	height: 45px;
+	color: transparent;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	margin: 0;
+}
+
+.modal_portfolio .swiper-button-prev.swiper-button-disabled {
+	display: inline-block;
+	background-position: -332px -221px;
+	width: 15px;
+	height: 45px;
+	color: transparent;
+}
+
+.modal_portfolio .swiper-button-next {
+	position: absolute;
+	top: 50px;
+	right: 0;
+	margin: 0;
+	display: inline-block;
+	background-position: -332px -74px;
+	width: 15px;
+	height: 45px;
+	color: transparent;
+}
+
+.modal_portfolio .swiper-button-next.swiper-button-disabled {
+	display: inline-block;
+	background-position: -332px -123px;
+	width: 15px;
+	height: 45px;
+	color: transparent;
+}
+
+.modal_portfolio .tit {
+	text-align: center;
+	font-size: 45px;
+	font-weight: bold;
+	line-height: 145px;
+}
+
+.modal_portfolio img + img {
+	margin-left: 15px;
+}
+
+.modal_portfolio .txt {
+	line-height: 30px;
+	text-align: left;
+}
+
+.modal_content {
+	position: relative;
+	margin: 10% auto;
+	width: 1200px;
+	min-height: 780px;
+	background: #727171;
+}
+
+.modal_close {
+	display: inline-block;
+	background-position: -194px -164px;
+	width: 70px;
+	height: 70px;
+	color: transparent;
+	position: absolute;
+	top: -35px;
+	right: -35px;
+}
+
+/*# sourceMappingURL=app.css.map */

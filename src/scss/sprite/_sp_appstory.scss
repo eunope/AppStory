@@ -1,0 +1,99 @@
+// Sprites Map
+$sp_appstory: (
+	name: 'sp_appstory',
+	width: 352px,
+	height: 308px,
+	image: '../img/sp_appstory.png',
+	sprites: (
+	arrow_img: (
+			offset-x: 0px,
+			offset-y: -164px,
+			width: 190px,
+			height: 100px,
+		),
+		clip_01: (
+			offset-x: 0px,
+			offset-y: -268px,
+			width: 40px,
+			height: 40px,
+		),
+		clip_02: (
+			offset-x: -332px,
+			offset-y: -270px,
+			width: 20px,
+			height: 20px,
+		),
+		close01: (
+			offset-x: -194px,
+			offset-y: -164px,
+			width: 70px,
+			height: 70px,
+		),
+		contract_img: (
+			offset-x: -44px,
+			offset-y: -268px,
+			width: 40px,
+			height: 30px,
+		),
+		homelogo: (
+			offset-x: 0px,
+			offset-y: 0px,
+			width: 270px,
+			height: 160px,
+		),
+		next01_ac: (
+			offset-x: -303px,
+			offset-y: -104px,
+			width: 25px,
+			height: 100px,
+		),
+		next01_pa: (
+			offset-x: -274px,
+			offset-y: 0px,
+			width: 25px,
+			height: 100px,
+		),
+		next02_ac: (
+			offset-x: -332px,
+			offset-y: -74px,
+			width: 15px,
+			height: 45px,
+		),
+		next02_pa: (
+			offset-x: -332px,
+			offset-y: -123px,
+			width: 15px,
+			height: 45px,
+		),
+		prev01_ac: (
+			offset-x: -274px,
+			offset-y: -104px,
+			width: 25px,
+			height: 100px,
+		),
+		prev01_pa: (
+			offset-x: -303px,
+			offset-y: 0px,
+			width: 25px,
+			height: 100px,
+		),
+		prev02_ac: (
+			offset-x: -332px,
+			offset-y: -172px,
+			width: 15px,
+			height: 45px,
+		),
+		prev02_pa: (
+			offset-x: -332px,
+			offset-y: -221px,
+			width: 15px,
+			height: 45px,
+		),
+		scroll_down: (
+			offset-x: -332px,
+			offset-y: 0px,
+			width: 20px,
+			height: 70px,
+		),
+	)
+);

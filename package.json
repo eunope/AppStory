@@ -1,0 +1,39 @@
+{
+  "name": "taskrunner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab2.uit.nhncorp.com/RND/taskrunner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "6.4.0",
+    "browser-sync": "2.14.3",
+    "del": "2.2.2",
+    "gulp": "3.9.1",
+    "gulp-clean-css": "2.0.12",
+    "gulp-compile-handlebars": "0.6.1",
+    "gulp-if": "2.0.1",
+    "gulp-md5-plus": "0.2.5",
+    "gulp-notify": "2.2.0",
+    "gulp-nts-uit-index-helper": "git+http://gitlab2.uit.nhncorp.com/RND/gulp-nts-uit-index-helper.git",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.1.1",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "3.0.0",
+    "gulp-sort": "2.0.0",
+    "gulp-sourcemaps": "1.6.0",
+    "gulp.spritesmith": "6.2.1",
+    "lazypipe": "1.0.1",
+    "postcss-url": "5.1.2",
+    "run-sequence": "1.2.2",
+    "vinyl-ftp": "0.5.0",
+    "vinyl-ftp-branch": "0.2.1"
+  }
+}

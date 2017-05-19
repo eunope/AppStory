@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+section {
+  position: relative;
+  height: 1080px;
+  text-align: center;
+  color: #fff;
+}
+.snb {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 1280px;
+  width: 110px;
+  height: 320px;
+  margin: auto;
+  color: #fff;
+  z-index: 10;
+  .snb_menu {
+    display: block;
+    width: 110px;
+    margin: 20px 20px 20px 0;
+    line-height: 30px;
+    &.active {
+      font-weight: bold;
+      color: #fabe00;
+    }
+  }
+}
+
+div.inflow {
+  width: 200px;
+  height: 1000px;
+  border: 1px solid blue;
+  float: right;
+  position: relative;
+  margin-right: 100px;
+}
+div.positioner {position: absolute; right: 0;} /*may not be needed: see below*/
+div.fixed {
+  width: 80px;
+  border: 1px solid red;
+  height: 100px;
+  position: fixed;
+  top: 60px;
+  margin-left: 15px;
+  font-size: 60px;
+  color: #000;
+}
+h2 {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  width: 215px;
+  height: 215px;
+  margin-left: -614px;
+  background: #ea5514;
+  font-size: 40px;
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 125px;
+    margin: auto
+  }
+  em {
+    display: block;
+    font-size: 60px;
+  }
+}
+h3 {
+  font-size: 40px;
+}
+footer {
+  text-align: center;
+  padding: 15px 0;
+  line-height: 30px;
+  color: #666;
+}
